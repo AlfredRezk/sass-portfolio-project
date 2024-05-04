@@ -1,0 +1,44 @@
+@include media-md {
+  .nav {
+    .menu-nav {
+      padding-right: 1.5rem;
+      &__link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .about__bio{
+    font-size: 1.5rem;
+  }
+
+  .projects{
+    &__image{
+        height: 40vh;
+    }
+    &__items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .text-secondary{
+        font-size: 3rem;
+    }
+  }
+
+  .contact__list{
+    grid-template-columns: (repeat(2,1fr));
+  }
+}
+
+@include media-lg{
+ .contact__list, .projects__items{
+    grid-template-columns: (repeat(3,1fr));
+ }
+
+ .projects__items{
+    width: 80vw;
+ }
+ .projects__image{
+    height: 55vh;
+ }
+ 
+}
